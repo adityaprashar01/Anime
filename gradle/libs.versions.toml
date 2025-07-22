@@ -1,5 +1,5 @@
 [versions]
-agp = "8.10.1"
+agp = "8.11.1"
 lifecycleViewmodelCompose = "2.9.2"
 retrofit = "2.11.0"
 gson = "2.9.0"
@@ -11,6 +11,7 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.9.1"
 activityCompose = "1.10.1"
 composeBom = "2024.09.00"
+firebaseCrashlyticsBuildtools = "3.0.4"
 
 
 [libraries]
@@ -31,6 +32,7 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

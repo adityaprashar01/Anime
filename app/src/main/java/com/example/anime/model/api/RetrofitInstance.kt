@@ -8,6 +8,7 @@ object RetrofitInstance {
     val api: AnimeApiService by lazy {
         Retrofit.Builder()
             .baseUrl("https://api.myanimelist.net/v2/")
+            .client(HttpClient.okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(AnimeApiService::class.java)
